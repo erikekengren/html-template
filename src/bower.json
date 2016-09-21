@@ -1,0 +1,26 @@
+{
+  "name": "html-test",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Erik Ekengren <erik@virtual.co.uk>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.3",
+    "bourbon": "~4.2.7",
+    "neat": "~1.8.0"
+  }
+}

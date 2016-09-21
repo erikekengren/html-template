@@ -1,0 +1,61 @@
+.home {
+	header nav .logo a {
+		background-image: url('../images/global/header/sprites/home.png') at-2x;
+	}
+
+	section:nth-child(2) {
+		.content {
+			padding: 30px 0;
+
+			article {
+				@include span-columns(5);
+				@include shift(1);
+
+				background-color: #eee;
+				border-left: 25px solid #e04f5f;
+				border-radius: 5px;
+
+				padding: 20px;
+
+				height: 100%;
+
+				@include media($tablet) {
+					@include span-columns(5);
+					@include shift(0);
+				}
+
+				@include media($mobile) {
+					@include span-columns(4);
+					@include shift(0);
+
+					background-image: url('../images/home/template.png');
+					background-size: 64px 64px;
+					background-repeat: no-repeat;
+					background-position: right 10px top 10px;
+				}
+
+				@include blockquote($light: true) {
+					margin-top: 20px;
+				}
+			}
+			aside {
+				@include span-columns(5);
+
+				background-image: url('../images/home/template.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+
+				height: 100%;
+				min-height: 256px;
+
+				@include media($tablet) {
+					@include span-columns(3);
+				}
+				@include media($mobile) {
+					display: none;
+				}
+			}
+		}
+	}
+}

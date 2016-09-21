@@ -1,0 +1,6 @@
+# Supported browsers
+# See https://github.com/ai/browserslist for options
+
+# > 1% - Not using at the moment
+Last 2 versions # Last two versions of all major browsers
+not IE <= 8 # IE9+ only

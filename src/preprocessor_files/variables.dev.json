@@ -1,0 +1,39 @@
+{
+	"sass" : {
+		"bourbon" : {
+			"fullSize" : {
+				"columnWidth": "77",
+				"gutterWidth": "20",
+				"gridColumns": "12",
+				"maxWidth": "1144"
+			},
+			"tablet" : {
+				"gridColumns": "8",
+				"maxWidth": "768"
+			},
+			"mobile" : {
+				"gridColumns": "4",
+				"maxWidth": "480"
+			}
+		}
+	},
+	"javascript": {
+		"variables": {
+		},
+		"settings" : {
+		}
+	},
+	"html" : {
+		"urls" : {
+			"home" : "index.html",
+			"html" : "html.html",
+			"css" : "css.html",
+			"javascript" : "javascript.html"
+		},
+		"apis" : {
+		},
+		"paths" : {
+			"imageBasePath": "assets/images/"
+		}
+	}
+}

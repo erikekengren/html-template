@@ -1,0 +1,23 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-color: white;
+}
+
+strong { font-weight: bold; }
+
+.page {
+	section {
+		.content {
+			@include outer-container;
+
+			clear: both;
+
+			aside, article {
+				min-height: 256px;
+			}
+		}
+	}
+}

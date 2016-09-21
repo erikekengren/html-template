@@ -1,0 +1,53 @@
+@mixin blockquote($light: false) {
+	blockquote {
+		font-family: 'Courier';
+
+		@if $light == true {
+			background-color: white;
+		}
+		@else {
+			background-color: #eee;
+		}
+		
+		
+		/*border-left: 10px solid $border-color;
+		border-right: 10px solid $border-color;
+		border-top: 5px solid $border-color;
+		border-bottom: 5px solid $border-color;*/
+
+		border-radius: 5px;
+
+		box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5);
+
+		padding: 10px;
+
+		@content;
+
+		/*
+		&::before {
+			font-family: 'Georgia';
+			font-size: 52px;
+			color: #ccc;
+			content: "“";
+			margin-right: 13px;
+			right: 100%;
+		}
+
+		&::after {
+			font-family: 'Georgia';
+			font-size: 52px;
+			height: 52px;
+			color: #ccc;
+			content: "\Aˮ";
+			float: right;
+			white-space: pre-wrap;
+			margin-left: 13px;
+			left: 100%;
+		}
+		/**/
+		
+		span {
+			font-weight: bold;
+		}
+	}
+}

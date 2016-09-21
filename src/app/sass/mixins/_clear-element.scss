@@ -1,0 +1,7 @@
+@mixin clear-element() {
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}

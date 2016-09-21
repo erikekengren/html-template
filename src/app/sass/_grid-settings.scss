@@ -1,0 +1,12 @@
+@import "neat/neat-helpers"; // or "neat-helpers" when in Rails
+
+// Change the grid settings
+$column: /*@echo preprocessor.sass.bourbon.fullSize.columnWidth*/px;
+$gutter: /*@echo preprocessor.sass.bourbon.fullSize.gutterWidth*/px;
+$grid-columns: /*@echo preprocessor.sass.bourbon.fullSize.gridColumns*/;
+$max-width: /*@echo preprocessor.sass.bourbon.fullSize.maxWidth*/px;
+
+// Define your breakpoints
+$content: new-breakpoint(max-width $max-width $grid-columns);
+$tablet: new-breakpoint(max-width /*@echo preprocessor.sass.bourbon.tablet.maxWidth*/px /*@echo preprocessor.sass.bourbon.tablet.gridColumns*/);
+$mobile: new-breakpoint(max-width /*@echo preprocessor.sass.bourbon.mobile.maxWidth*/px /*@echo preprocessor.sass.bourbon.mobile.gridColumns*/);

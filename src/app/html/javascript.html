@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-capable" content="yes" />
+
+		<link rel="stylesheet" type="text/css" href="assets/css/site.css" data-cache-option="<!-- @echo assetCacheMethod -->" />
+	
+		<script type="text/javascript" src="assets/js/vendor/modernizr.js"></script>
+	</head>
+	<body class="javascript">
+		<div class="page">
+			<header>
+				<nav>
+					<div class="logo"></div>
+					<ul>
+						<li><a href="<!-- @echo preprocessor.html.urls.home -->">Home</a></li>
+						<li><a href="<!-- @echo preprocessor.html.urls.html -->">HTML</a></li>
+						<li><a href="<!-- @echo preprocessor.html.urls.css -->">CSS</a></li>
+						<li><a class="active" href="<!-- @echo preprocessor.html.urls.javascript -->">Javascript</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div class="content">
+					<article>
+						<h1>Javascript</h1>
+
+						<h2>Framework</h2>
+
+						<p><a href="https://webpack.github.io/">Webpack</a></p>
+
+						<blockquote>&ldquo;webpack is a module bundler.<br/><br/>
+
+webpack takes modules with dependencies and generates static assets representing those modules.&rdquo;</blockquote>
+					</article>
+					<aside></aside>
+				</div>
+			</section>
+			<section>
+				<div class="content">
+					<aside></aside>
+					<article>
+						<h2>Libraries</h2>
+
+						<h3><a href="https://jquery.com/">jQuery</a></h3>
+
+						<blockquote>&ldquo;<span>jQuery</span> is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.&rdquo;</blockquote>
+
+						<p>Added using <strong>Bower</strong></p>
+
+						<h3>ViewPort</h3>
+
+						<blockquote>&ldquo;<span>ViewPort</span> is a small library that executes javascripts based on media queries.
+						<br/><br/>
+						Can be combined with <span>ResizeHelper</span> to make sure the javascript only runs when the window has finished resizing.&rdquo;</blockquote>
+
+						<p>Example: <br/><br/><span class="viewport"></span></p>
+
+						<h3>ResizeHelper</h3>
+
+						<blockquote>&ldquo;<span>ResizeHelper</span> provides events for start and stop of resizing the window. To be used to only run code when resizing finishes instead of continuously.
+						<br/>
+						Adds the resize:start and resize:end events to window.&rdquo;</blockquote>
+
+						<p>Example: <span class="resize">Idle</span></p>
+					</article>
+				</div>
+			</section>
+		</div>
+
+		<script type="text/javascript" src="assets/js/common.js" data-cache-option="<!-- @echo assetCacheMethod -->"></script>
+		<!-- Page module -->
+		<script type="text/javascript" src="assets/js/pages/javascript.js" data-cache-option="<!-- @echo assetCacheMethod -->"></script>
+	</body>
+</html>

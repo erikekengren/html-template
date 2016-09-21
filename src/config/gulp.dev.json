@@ -1,0 +1,50 @@
+{
+	"buildConfiguration" : "dev",
+	"assetCacheMethod" : "time",
+	"usePlatfromSpecificTasks" : false,
+	"allowBackgroundAjaxTasks" : false,
+	"paths" : {
+		"basepath" : "./",
+		"screenshots": "../screenshots/",
+		"src" : {
+			"basepath" : "./",
+			"jspath": "app/js/",
+			"csspath": "app/sass/",
+			"imagepath" : "app/images/",
+			"htmlpath" : "app/html/"
+		},
+		"build" : {
+			"basepath" : "../build",
+			"jspath": "../build/assets/js/",
+			"csspath": "../build/assets/sass/",
+			"imagepath" : "../build/assets/images/",
+			"htmlpath" : "../build/"
+		},
+		"dist" : {
+			"basepath" : "../dist",
+			"jspath": "../dist/assets/js/",
+			"csspath": "../dist/assets/css/",
+			"imagepath" : "../dist/assets/images/",
+			"htmlpath" : "../dist/"
+		}
+	},
+	"gulp": {
+		"postcss" : {
+			"pxtorem" : {
+				"rootValue": 16,
+				"unitPrecision": 5,
+				"propWhiteList": ["font", "font-size", "line-height", "letter-spacing"],
+				"selectorBlackList": [],
+				"replace": false,
+				"mediaQuery": false,
+				"minPixelValue": 0
+			},
+			"sprites" : {
+				"imagesBaseUrl" : "../images/"
+			},
+			"assets": {
+				"cachebuster" : false
+			}
+		}
+	}
+}

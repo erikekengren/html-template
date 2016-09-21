@@ -1,0 +1,27 @@
+$font-heading-h1: 'Arial', 'Helvetica', 'Sans-Serif';
+$font-heading-h2: 'Arial', 'Helvetica', 'Sans-Serif';
+$font-body-normal:'Georgia', 'Serif';
+
+body {
+	color: #0d1d0d;
+	font-size: 16px;
+	font-family: $font-body-normal;
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+h1 {
+	font-size: 24px;
+    line-height: 1.5;
+    font-family: $font-heading-h1;
+    margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 20px;
+    line-height: 1.5;
+    font-family: $font-heading-h2;
+    margin-bottom: 20px;
+}
